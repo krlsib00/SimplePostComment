@@ -11,7 +11,13 @@ namespace VerifiedLay.Controllers
     [AllowAnonymous]
     public class UsersController : ApiController
     {
-        readonly UsersService usersService = new UsersService();
+        readonly IUsersService usersService; // this was pre-Unity = new UsersService();
+
+        public UsersController(IUsersService usersService)
+        {
+            // store the parameter "usersService" into the filed "usersService"
+            this.usersService = usersService;
+        }
 
         [Route("api/users"), HttpGet]
         public HttpResponseMessage GetAll()

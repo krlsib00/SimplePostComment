@@ -8,7 +8,7 @@ using VerifiedLay.Models;
 
 namespace VerifiedLay.Services
 {
-    public class UsersService
+    public class UsersService : IUsersService
     {
             // ConfiguarionManager is a class
             // it has a static property called "ConnectionStrings".
