@@ -51,7 +51,15 @@ namespace VerifiedLay.Services
 
                         var user = new User();
                         user.Id = (int)reader["id"];
-                        user.Name = (string)reader["name"];
+                        user.FirstName = (string)reader["FirstName"];
+                        user.LastName = (string)reader["LastName"];
+                        user.DisplayName = (string)reader["DisplayName"];
+                        user.Email = (string)reader["Email"];
+                        user.Password = (string)reader["Password"];
+                        user.Sex = (bool)reader["Sex"];
+                        user.Age = (int)reader["Age"];
+                        user.ZipCode = (int)reader["ZipCode"];
+                        user.Verified = (bool)reader["Verified"];
                         user.DateCreated = (DateTime)reader["DateCreated"];
                         user.DateModified = (DateTime)reader["DateModified"];
 

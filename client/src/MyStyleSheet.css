@@ -1,0 +1,36 @@
+.body {
+  min-height: 100vh;
+}
+
+.my-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* height: 100vh; */
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: 1fr 40em 1fr;
+}
+
+.my-grid > div {
+  grid-column: 2;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.inputBox {
+  width: 99%;
+  height: 67%;
+}
+
+.inputDiv {
+  height: 15vh;
+}
+
+.postButton {
+  position: fixed;
+  left: 84%;
+}

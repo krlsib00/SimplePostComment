@@ -45,6 +45,7 @@ namespace VerifiedLay
             // container.RegisterType<IProductRepository, ProductRepository>();
 
             container.RegisterType<IUsersService, UsersService>();
+            container.RegisterType<IPostsService, PostsService>();
         }
     }
 }
