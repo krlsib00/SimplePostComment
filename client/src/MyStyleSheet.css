@@ -3,7 +3,7 @@
 }
 
 .my-grid {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   /* height: 100vh; */
@@ -31,6 +31,16 @@
 }
 
 .postButton {
-  position: fixed;
-  left: 84%;
+  position: relative;
+  left: 522px;
 }
+
+/* .deletePost {
+  position: relative;
+  left: 475px;
+}
+
+.editPost {
+  position: relative;
+  left: 470px;
+} */

@@ -41,5 +41,46 @@ namespace VerifiedLay.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK, id);
         }
+
+        [Route("api/posts"), HttpGet]
+        public HttpResponseMessage GetAll()
+        {
+            var results = postsService.GetAll();
+
+            return Request.CreateResponse(HttpStatusCode.OK, results);
+        }
+
+        [Route("api/posts/{id:int}"), HttpDelete]
+        public HttpResponseMessage Delete(int id)
+        {
+            postsService.Delete(id);
+
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
+        [Route("api/posts/{id:int}"), HttpPut]
+        public HttpResponseMessage Update(int id, PostUpdateRequest req)
+        {            
+            if (req == null)
+            {
+                ModelState.AddModelError("", "You did not send any body data!");
+            }
+            if (req.Id != id)
+            {
+                ModelState.AddModelError("Id", "ID in the URL does not match the ID in the body");
+            }
+            if (!ModelState.IsValid)
+            {
+                return Request.CreateErrorResponse(
+                    HttpStatusCode.BadRequest,
+                    ModelState
+                    );
+            }
+            IPostsService postsService = new PostsService();
+
+            postsService.Update(req);
+
+            return Request.CreateResponse(HttpStatusCode.Created, id);
+        }
     }
 }
