@@ -78,7 +78,7 @@ class Home extends Component {
     const myPromise = axios.put("/api/posts/" + inputs.id, editedPost);
 
     myPromise.then(resp => {
-      const index = this.state.posts.findIndex(post => post.id == inputs.id);
+      const index = this.state.posts.findIndex(post => post.id === inputs.id);
 
       const posts = [
         ...this.state.posts.slice(0, index),
