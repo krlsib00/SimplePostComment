@@ -4,9 +4,9 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
-using VerifiedLay.Models;
+using SimplePostComment.Models;
 
-namespace VerifiedLay.Services
+namespace SimplePostComment.Services
 {
     public class UsersService : IUsersService
     {

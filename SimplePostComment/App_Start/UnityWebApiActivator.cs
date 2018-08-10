@@ -2,10 +2,10 @@ using System.Web.Http;
 
 using Unity.AspNet.WebApi;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(VerifiedLay.UnityWebApiActivator), nameof(VerifiedLay.UnityWebApiActivator.Start))]
-[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(VerifiedLay.UnityWebApiActivator), nameof(VerifiedLay.UnityWebApiActivator.Shutdown))]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(SimplePostComment.UnityWebApiActivator), nameof(SimplePostComment.UnityWebApiActivator.Start))]
+[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(SimplePostComment.UnityWebApiActivator), nameof(SimplePostComment.UnityWebApiActivator.Shutdown))]
 
-namespace VerifiedLay
+namespace SimplePostComment
 {
     /// <summary>
     /// Provides the bootstrapping for integrating Unity with WebApi when it is hosted in ASP.NET.

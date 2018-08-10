@@ -1,9 +1,9 @@
 using System;
 
 using Unity;
-using VerifiedLay.Services;
+using SimplePostComment.Services;
 
-namespace VerifiedLay
+namespace SimplePostComment
 {
     /// <summary>
     /// Specifies the Unity configuration for the main container.

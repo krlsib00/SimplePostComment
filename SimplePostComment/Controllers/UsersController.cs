@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using VerifiedLay.Services;
+using SimplePostComment.Services;
 
-namespace VerifiedLay.Controllers
+namespace SimplePostComment.Controllers
 {
     [AllowAnonymous]
     public class UsersController : ApiController

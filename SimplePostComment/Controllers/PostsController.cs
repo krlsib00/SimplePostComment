@@ -4,10 +4,10 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using VerifiedLay.Models;
-using VerifiedLay.Services;
+using SimplePostComment.Models;
+using SimplePostComment.Services;
 
-namespace VerifiedLay.Controllers
+namespace SimplePostComment.Controllers
 {
     [AllowAnonymous]
     public class PostsController : ApiController

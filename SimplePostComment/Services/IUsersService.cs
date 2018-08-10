@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using VerifiedLay.Models;
+using SimplePostComment.Models;
 
-namespace VerifiedLay.Services
+namespace SimplePostComment.Services
 {
     public interface IUsersService
     {
